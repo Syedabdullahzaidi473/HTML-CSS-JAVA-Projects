@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR POrtal</title>
+    <link rel="icon" href="FB_IMG_1697745117604.jpg">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ceeff2;
+    }
+    header{
+        background-color: #10d4e6;
+        color: aliceblue;
+        text-align: center;
+        padding: 2px;
+    }
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color:white;
+    }
+    footer{
+        background-color: #ceeff2;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width: 190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50,-50);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #10d4e6;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social.icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-display:center;
+    padding: 5px;
+}
+.social-icons i{
+    color:white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #e64210;
+}
+.social.icons i:hover{
+    color: #10d4e6;
+}
+.bottom-bar{
+    background: #10d4e6;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    font-size: 16px;
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+}
+.navitem{
+    display: inline;
+    padding: 20px;
+}
+.navitem a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.registerform{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+</style>
+</style>
+<body>
+    
+    <header>
+        <h1>Welcome To HR Portal</h1>
+        <ul>
+            <nav>
+            <li class="navitem"><a href="#home">HOME</a></li>
+            <li class="navitem"><a href="#admission-registration">RIGISTRATION</a></li>
+            <li class="navitem"><a href="#footer-contact-us">CONTACT US</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="admission-registration" class="registerform">
+    <h2>Registration Form</h2>
+    <p>Fill the below form to register as a <em>student</em></p>
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" placeholder="Enter first namee" id="firstname"><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" placeholder="Enter Last name" id="lastname"><br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password"><br>
+
+        <label for="email">Enter email id</label>
+        <input type="email" placeholder="Enter email id" id="email"><br>
+
+        <br><label for="age">Enter age</label>
+        <input type="number" placeholder="Enter age" id="age"><br>
+
+        <br><label for="dob">Enter your date of birth</label>
+        <input type="date" id="dob"><br>
+
+        <br><label for="gender">Select Gender:</label>
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" value="female" id="female" name="gender">
+        <label for="female">female</label><br>
+
+        <br><label for="country">Select country:</label>
+        <select id="country">
+        <option value="pakistan">Pakistan</option>
+        <option value="usa">USA</option>
+        <option value="uae">UAE</option>
+        <option value="america">America</option>
+        <option value="canada">Canada</option>
+        <option value="dubai">Dubai</option>
+        </select>
+
+       <br><br><textarea placeholder="Explain your interest in registration" rows="5" cols="50">
+        </textarea><br>
+
+        <br><label for="file">Upload file</label>
+        <input type="file" value="file" id="file"><br>
+        
+       <br><input type="checkbox" id="terms" value="agree">
+        <label for="terms">I agree on the terms and condition</label><br>
+
+        <br><input type="reset">
+        <br><input type="submit">
+    </form>
+</section>
+
+    <section>
+        <footer>
+            <div class="container">
+                <div class="footer-content" id="footer-contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: education786@gmail.com</p>
+                <p>Number: +92172891255</p>
+                <p>Address: Zaman Town Korangi Karachi</p>
+                </div>
+                <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#admission-registration">REGISTRATION</a></li>
+                    <li><a href="">Contact US</a></li>
+                </ul>
+                </div>
+                <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+            </div>
+                  <div class="bottom-bar">
+                    <p>&copy; 2024-2025 your school all right reserved</p>
+                </footer>
+    </section>
+
+</body>
+</html>
